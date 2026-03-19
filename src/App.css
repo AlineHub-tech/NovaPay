@@ -1,0 +1,82 @@
+/* 1. RESET & GLOBAL BOX MODEL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ibi nibyo bituma padding itarenga screen */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%; /* Bibuza urubuga kurenga iburyo */
+  overflow-x: hidden; /* Ikuraho horizontal scroll burundu */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  color: #1a202c;
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 2. MAIN LAYOUT WRAPPER */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 100%;
+}
+
+.main-content {
+  flex: 1; /* Bituma footer ihora hepfo n'iyo paji yaba ari ngufi */
+  width: 100%;
+  max-width: 100%;
+  padding-top: 75px; /* Umwanya wa Navbar ihagaze hejuru */
+}
+
+/* 3. GLOBAL RESPONSIVE CONTAINERS */
+.container {
+  width: 100%;
+  max-width: 1280px; /* Icyerekezo cya Desktop */
+  margin: 0 auto;
+  padding: 0 5%; /* Padding yoroshye kuri mobile */
+}
+
+/* 4. BK PRIMARY BUTTON (GLOBAL) */
+.btn-bk-global {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-bk-global:hover {
+  background-color: #002244;
+  transform: translateY(-2px);
+}
+
+/* 5. FIX FOR IMAGES & VIDEOS */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 6. UTILITY FOR MOBILE */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 70px; /* Navbar iba ntoya kuri mobile */
+  }
+}
