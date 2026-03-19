@@ -1,0 +1,143 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #edf2f7;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  padding: 0; /* No space outside */
+}
+
+.nav-container {
+  width: 100%;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO STYLING */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #003366;
+  font-weight: 800;
+  font-size: 1.3rem;
+  letter-spacing: -0.5px;
+}
+
+.logo-icon {
+  background: #003366;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+/* DESKTOP MENU */
+.nav-links-desktop {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #003366;
+}
+
+.btn-nav-primary {
+  background: #003366;
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.btn-nav-primary:hover {
+  background: #002244;
+  transform: translateY(-2px);
+}
+
+/* MOBILE TOGGLE */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #003366;
+  cursor: pointer;
+}
+
+/* MOBILE MENU OVERLAY */
+.nav-links-mobile {
+  position: fixed;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  z-index: 999;
+}
+
+.nav-links-mobile.active {
+  height: calc(100vh - 75px);
+}
+
+.mobile-link {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+  text-decoration: none;
+}
+
+.btn-mobile-primary {
+  background: #003366;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+/* RESPONSIVE BREAKPOINT */
+@media (max-width: 968px) {
+  .nav-links-desktop {
+    display: none;
+  }
+  
+  .mobile-menu-btn {
+    display: block;
+  }
+}

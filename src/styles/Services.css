@@ -1,0 +1,101 @@
+/* --- GLOBAL PAGE WRAPPERS --- */
+.about-page-wrapper, .services-page-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+.s-learn-more{
+  background: #ffffff;
+  color: #003366;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 0.875rem;
+
+}
+/* HERO STYLES (BK NAVY) */
+.about-hero-section, .services-hero {
+  padding: 100px 8%;
+  background: #003366;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.about-hero-section h1, .services-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.about-hero-section span, .services-hero span { color: #00AEEF; }
+
+.badge-bk {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #00AEEF;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/* MISSION & VISION GRID */
+.mv-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px 8%;
+  margin-top: -60px; /* BK Overlap Style */
+}
+
+.mv-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+/* VALUES & SERVICES GRID */
+.values-grid-bk, .s-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 60px 8%;
+}
+
+.value-box, .service-pro-card {
+  padding: 40px;
+  border: 1px solid #f1f5f9;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.value-box:hover, .service-pro-card:hover {
+  border-color: #00AEEF;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.value-box h4, .service-pro-card h3 {
+  margin: 20px 0 10px;
+  color: #003366;
+  font-weight: 800;
+}
+
+.value-box p, .service-pro-card p {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.s-icon-box { color: #003366; }
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .about-hero-section, .services-hero { padding: 80px 5%; }
+  .mv-container { margin-top: 0; padding: 40px 5%; }
+  .values-grid-bk, .s-grid { padding: 40px 5%; }
+}

@@ -1,0 +1,90 @@
+/* --- UNIVERSAL PAGE WRAPPER --- */
+.pro-page-container {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+}
+
+/* --- HERO STYLE (BK NAVY) --- */
+.sec-hero, .fs-hero, .collab-hero, .support-hero {
+  padding: 100px 8%;
+  background: #003366; /* BK Royal Blue */
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.badge-pro {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  color: #00AEEF;
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 900; line-height: 1.1; }
+h1 span { color: #00AEEF; }
+
+/* --- GRIDS & CARDS --- */
+.sec-features-grid, .fs-grid, .support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 80px 8%;
+}
+
+.sec-card-pro, .fs-card, .sup-card, .partner-item {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #f1f5f9;
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.sec-card-pro:hover, .fs-card:hover {
+  border-color: #00AEEF;
+  box-shadow: 0 20px 40px rgba(0, 51, 102, 0.05);
+  transform: translateY(-8px);
+}
+
+h3, h4 { color: #003366; font-weight: 800; margin: 20px 0 10px; }
+p { font-size: 14px; color: #64748b; line-height: 1.6; }
+
+/* --- BUTTONS --- */
+.btn-fs-link {
+  background: none;
+  border: none;
+  color: #00AEEF;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* --- SEARCH BOX (SUPPORT) --- */
+.search-box-pro {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.search-box-pro input {
+  width: 100%;
+  padding: 18px 25px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* --- RESPONSIVE FIXES --- */
+@media (max-width: 768px) {
+  .sec-hero, .fs-hero, .collab-hero, .support-hero { padding: 80px 5%; }
+  .sec-features-grid, .fs-grid, .support-grid { padding: 40px 5%; }
+}

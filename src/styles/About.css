@@ -1,0 +1,99 @@
+.about-wrapper {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Hero Section BK Style */
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #003366 0%, #001a33 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 10%;
+}
+
+.about-hero-text h1 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 20px;
+}
+
+.about-hero-text .highlight {
+  color: #00AEEF;
+}
+
+.about-hero-text p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Mission & Vision Cards */
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 80px 10%;
+  margin-top: -60px; /* Overlap effect like BK */
+}
+
+.mv-card {
+  background: white;
+  padding: 50px 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.4s;
+}
+
+.mv-card:hover { transform: translateY(-10px); }
+
+.mv-icon { color: #003366; margin-bottom: 20px; }
+.mv-card h3 { font-size: 24px; margin-bottom: 15px; color: #003366; }
+.mv-card p { color: #666; line-height: 1.5; }
+
+/* Values Section */
+.core-values {
+  padding: 80px 10%;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  color: #003366;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.value-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border-bottom: 4px solid #00AEEF;
+}
+
+.v-icon { color: #00AEEF; margin-bottom: 15px; width: 40px; height: 40px; }
+
+/* History Section */
+.history-text {
+  padding: 100px 15%;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.history-text h2 { margin-bottom: 30px; color: #003366; }
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .mission-vision { margin-top: 0; padding: 40px 5%; }
+  .history-text { padding: 60px 5%; }
+}
