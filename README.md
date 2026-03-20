@@ -2,10 +2,6 @@
 
 **NovaPay** is a high-fidelity, professional digital banking platform inspired by the institutional trust and clean aesthetics of **BK.rw**. Built for the modern Rwandan financial landscape, it bridges the gap between traditional stability and futuristic FinTech innovation.
 
-![NovaPay Preview](https://shields.io) 
-![React](https://shields.io)
-![Tailwind](https://shields.io)
-
 ---
 📸ScreenShot
 <img width="1348" height="634" alt="ne2" src="https://github.com/user-attachments/assets/0404a288-18da-4e48-8fa8-4458927684a3" />
